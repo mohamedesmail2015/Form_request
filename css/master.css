@@ -53,10 +53,9 @@ ul {
 .contact form {
   overflow: hidden;
   margin: auto;
-  padding: 30px 10px;
+  padding: 10px;
   border-radius: 15px;
   background: #ffffff;
-  /* box-shadow: 0px 17px 44px 0px #b3b3b340; */
 }
 
 .contact form .first-name {
@@ -87,8 +86,9 @@ ul {
   display: block;
   margin: auto;
   width: 200px;
-  height: 50px;
+  height: 40px;
   border: none;
+  margin-top: 20px;
   padding: 10px 80px;
   border-radius: 68px;
   text-align: center;
@@ -133,21 +133,119 @@ ul {
   padding: 30px;
 }
 
-.all_table .table {
-  text-align: center !important;
-  justify-content: center !important;
+.all_table .consulta {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
-.all_table .table button {
+.all_table .consulta .btn_modal {
   display: block;
   margin: auto;
-  width: 90px;
+  width: 70px;
   height: 30px;
   border: none;
-  border-radius: 68px;
+  border-radius: 20px;
   text-align: center;
   justify-content: center;
   color: #ffffff;
   background: #3bbfa7;
 }
 
+.all_table .table {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
 /* End table 3*/
+
+/* Start modal */
+.modal {
+  padding-top: 70px;
+}
+
+.modal-content {
+  border: none !important;
+  box-shadow: 0px 17px 44px 0px #b3b3b340 !important;
+}
+
+.close_modal {
+  text-align: end !important;
+}
+
+@media (max-width: 567px) {
+  .modal {
+    padding: 170px 20px 0 !important;
+  }
+}
+
+/* End modal */
+
+.table_title {
+  padding: 10px 20px 0;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.table_content_left,
+.table_content_right {
+  margin-top: 7px;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #339aff;
+}
+
+.table_content_left p,
+.table_content_right p {
+  width: 50%;
+  height: 48px;
+  font-size: 17px;
+  padding-top: 11px;
+  color: #ffffff;
+  background: #339aff;
+  border-radius: 8px 0 0 8px;
+}
+
+.table_content_left h3,
+.table_content_right h3 {
+  font-size: 17px;
+  width: 50%;
+  height: 66px;
+  padding-top: 13px;
+  color: #000000;
+}
+
+.table_content_left .status,
+.table_content_right .status {
+  color: #8ee0dd;
+}
+
+.doctor {
+  height: 100px !important;
+}
+
+.doctor p {
+  padding-top: 33px;
+  height: 98px !important;
+}
+
+.doctor_img {
+  width: 100px;
+  height: 70px;
+}
+
+/* .right {
+  width: 45%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid red;
+} */

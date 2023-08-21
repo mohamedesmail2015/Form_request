@@ -47,19 +47,157 @@
 
     <!-- End header 1 -->
 
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="table_content_left">
+              <p>Status</p>
+              <h3 class="status">Accepted</h3>
+            </div>
+            <div class="table_content_left">
+              <p>Mobile</p>
+              <h3>01013218579</h3>
+            </div>
+            <div class="table_content_left">
+              <p>number Id</p>
+              <h3>Accepted</h3>
+            </div>
+            <div class="table_content_left">
+              <p>Country</p>
+              <h3>Accepted</h3>
+            </div>
+
+            <div class="table_content_left">
+              <p>Balance</p>
+              <h3>0 SAR</h3>
+            </div>
+
+            <div class="table_content_left">
+              <p>Status</p>
+              <h3>Accepted</h3>
+            </div>
+
+            <div class="table_content_left">
+              <p>Status</p>
+              <h3>Accepted</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="table_content_right">
+              <p>Online Status</p>
+              <h3 class="status">Available</h3>
+            </div>
+            <div class="table_content_right">
+              <p>Online Status</p>
+              <h3>Available</h3>
+            </div>
+            <div class="table_content_right">
+              <p>Online Status</p>
+              <h3>Available</h3>
+            </div>
+
+            <div class="table_content_right">
+              <p>Online Status</p>
+              <h3>Available</h3>
+            </div>
+
+            <div class="table_content_right doctor">
+              <p>Online Status</p>
+              <h3><img class="doctor_img" src="/imgs/doctor.png" alt="" /></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Start contact 2 -->
     <section class="container all_table">
+      <div class="consulta">
+        <p>Consultations</p>
+
+        <!-- Button trigger modal -->
+        <p>
+          <button
+            type="button"
+            class="btn_modal"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </p>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn btn-danger close_modal"
+                  data-bs-dismiss="modal"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <section class="contact">
+                  <form>
+                    <div class="text-start">
+                      <label for="#">Enter phone number</label>
+                      <input
+                        type="number"
+                        placeholder="01013218576"
+                        name="number"
+                      />
+                    </div>
+                    <div class="text-start">
+                      <label for="#">Enter name</label>
+                      <input type="text" placeholder="mohamed" name="name" />
+                    </div>
+                    <div class="text-start">
+                      <label for="#">Enter password</label>
+                      <input
+                        type="password"
+                        placeholder="*******"
+                        name="password"
+                      />
+                    </div>
+                    <div class="text-start">
+                      <label for="#">confirm password</label>
+                      <input
+                        type="password"
+                        placeholder="*******"
+                        name="password"
+                      />
+                    </div>
+                    <div class="text-start">
+                      <button class="form_button">Send</button>
+                    </div>
+                  </form>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Date From</th>
-            <th scope="col">Date to</th>
-            <th scope="col">Time From</th>
-            <th scope="col">Time to</th>
-            <th scope="col">Doctor Number</th>
+            <th scope="col">ID</th>
+            <th scope="col">Doctor</th>
             <th scope="col">Status</th>
-            <th scope="col">Actions</th>
+            <th scope="col">Type</th>
+            <th scope="col">Cost</th>
           </tr>
         </thead>
         <tbody>
@@ -67,13 +205,8 @@
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>
-              <button><i class="fa-solid fa-check"></i></button>
-            </td>
+            <td>mdo</td>
+            <td>200 $</td>
           </tr>
         </tbody>
       </table>
@@ -83,3 +216,26 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<!-- <div class="table_title">
+  <div class="table_content_left">
+    <p>Status</p>
+    <h3>Accepted</h3>
+  </div>
+
+  <div class="table_content_right">
+    <p>Online Status</p>
+    <h3>Available</h3>
+  </div>
+</div> -->
+<!-- <div class="table_title">
+  <div class="table_content_left">
+    <p>Status</p>
+    <h3>Accepted</h3>
+  </div>
+
+  <div class="table_content_right doctor" >
+    <p>Online Status</p>
+    <h3><img class="doctor_img" src="/imgs/doctor.png" alt="" /></h3>
+  </div>
+</div> -->
